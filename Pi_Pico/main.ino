@@ -23,9 +23,9 @@ void loop()
         Subsystem_U.G_fuel = 0.0085;
     }
     Subsystem_step();
-    i++;
     Serial.print(Subsystem_Y.P);
     Serial.print('\t');
     Serial.print(i*0.001);
     Serial.println();
+    i++;
 }
